@@ -7,6 +7,7 @@ a real traceroute visualized as the satellite-uplink terminal from *GoldenEye*.
 
 ```sh
 brew tap LarssonOskar/goldeneye
+brew trust LarssonOskar/goldeneye
 brew install goldeneye-tracert
 ```
 

@@ -14,7 +14,7 @@ class GoldeneyeTracert < Formula
 
     (bin/"goldeneye-tracert").write <<~SH
       #!/bin/sh
-      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/src/cli.ts" "$@"
+      exec "#{formula_opt_bin("node")}/node" "#{libexec}/src/cli.ts" "$@"
     SH
     chmod 0755, bin/"goldeneye-tracert"
   end
