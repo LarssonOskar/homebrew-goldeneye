@@ -5,6 +5,8 @@ a real traceroute visualized as the satellite-uplink terminal from *GoldenEye*.
 
 ## Install
 
+Homebrew 7 requires third-party taps to be trusted explicitly:
+
 ```sh
 brew tap LarssonOskar/goldeneye
 brew trust LarssonOskar/goldeneye
