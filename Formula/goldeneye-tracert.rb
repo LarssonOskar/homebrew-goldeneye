@@ -1,8 +1,8 @@
 class GoldeneyeTracert < Formula
   desc "Traceroute visualized as a GoldenEye satellite uplink terminal"
   homepage "https://github.com/LarssonOskar/goldeneye-tracert"
-  url "https://github.com/LarssonOskar/goldeneye-tracert/releases/download/v0.7.6/goldeneye-tracert-0.7.6.tar.gz"
-  sha256 "fc90b9fbab9c16f1f31a75e9371ed621c7e8c5bfc8e950fea09aa0ff23a26348"
+  url "https://github.com/LarssonOskar/goldeneye-tracert/releases/download/v0.7.7/goldeneye-tracert-0.7.7.tar.gz"
+  sha256 "b4842c1139b973170e9e0f93412ba27cc1cd942d6f633ecb3837d603505baa26"
   license "MIT"
   head "https://github.com/LarssonOskar/goldeneye-tracert.git", branch: "main"
 
@@ -30,7 +30,7 @@ class GoldeneyeTracert < Formula
   end
 
   test do
-    assert_match "goldeneye-tracert 0.7.6",
+    assert_match "goldeneye-tracert 0.7.7",
                  shell_output("#{bin}/goldeneye-tracert --version")
     assert_match "GOLDENEYE",
                  shell_output("#{bin}/goldeneye-tracert --demo --once --no-color --width 80 --height 24")
